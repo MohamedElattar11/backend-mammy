@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="form signup">
+          <div class="form-content">
+            <header>Signup</header>
+            <form action="/user/register" method="post" enctype="multipart/form-data">
+              <div class="field input-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+      
+              <div class="field input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+      
+              <div class="field input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+      
+              <div class="field input-field">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+      
+              <div class="field input-field">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+              </div>
+      
+              <div class="field input-field">
+                <label for="numOfBaby">Number of Babies</label>
+                <input type="number" id="numOfBaby" name="numOfBaby" placeholder="Enter the number of babies" >
+              </div>
+      
+              <div class="field input-field">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                  <option value="">Select a role</option>
+                  <option value="pregnant">Pregnant</option>
+                  <option value="mother">Mother</option>
+                  <option value="seller">Seller</option>
+                </select>
+              </div>
+      
+    
+      
+              <div class="field input-field">
+                <label for="pregnancyMonth">Pregnancy Month</label>
+                <input type="number" id="pregnancyMonth" name="pregnancyMonth" placeholder="Enter the pregnancy month">
+              </div>
+      
+              <div class="field input-field">
+                <label for="babyWeight">Baby Weight</label>
+                <input type="number" id="babyWeight" name="babyWeight" placeholder="Enter the baby weight">
+              </div>
+      
+              <div class="field input-field">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" name="image">
+              </div>
+      
+              <div class="field button-field">
+                <button type="submit">Signup</button>
+              </div>
+            </form>
+            <div class="text sign-in-text">Already have an account? <a href="/users/login">Login now</a></div>
+          </div>
+        </div>
+      </section>
+      
+
+
+</body>
+
+</html>
